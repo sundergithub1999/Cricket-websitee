@@ -1,0 +1,159 @@
+{% extends 'base.html' %}
+
+{% block title %} Player {% endblock title %} 
+
+{% block body %}
+
+<section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h1 class="sm:text-3xl text-2xl font-bold title-font mb-4 text-gray-900 "> Our Team Player</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">“When people throw stones at you, you turn them into milestones.”</p>
+      </div>
+      <div class="flex flex-wrap -m-2">
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src=" media/virat.jpg">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Virat Kohli</h2>
+              <p class="text-gray-500">Captain</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="media/rohit.jpg">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Rohit Sharma</h2>
+              <p class="text-gray-500">Vice Captian</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="media/dhoni.jpeg">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Ms Dhoni</h2>
+              <p class="text-gray-500">Wicket Keeper</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="media/Jadeja.jpg">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Ravindra Jadeja</h2>
+              <p class="text-gray-500">All Rounder</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="media/abd.jpg">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Ab Divilliers</h2>
+              <p class="text-gray-500">Mr. 360</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="media/raina.jpg">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Suresh Raina</h2>
+              <p class="text-gray-500">Filder</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="media/bumrah.jpg">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">jasprit bumrah </h2>
+              <p class="text-gray-500">Bowler</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="media/gyle.jpg">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Chris Gyle</h2>
+              <p class="text-gray-500">king of sixes</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="media/kl.png">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">KL Rahul</h2>
+              <p class="text-gray-500">Joker</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <form method="post" action="/player">
+    {% csrf_token %}
+  <section class="text-gray-600 body-font relative" >
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-12">
+        <h1 class="sm:text-3xl text-2xl font-bold title-font mb-4 text-gray-900">Register to join the team</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">To contact us ,please fill your details.</p>
+      </div>
+      <div class="lg:w-1/2 md:w-2/3 mx-auto">
+        <div class="flex flex-wrap -m-2">
+          <div class="p-2 w-1/2">
+            <div class="relative">
+              <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+              <input type="text" id="name" name="name"  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+          </div>
+          <div class="p-2 w-1/2">
+            <div class="relative">
+              <label for="email" class="leading-7 text-sm text-gray-600 " >Email-id</label>
+              <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+          </div>
+
+          <div class="p-2 w-1/2">
+            <div class="relative">
+              <label class="leading-7 text-sm text-gray-600">phone number</label>
+              <input type="text" id="phone" name="phone"  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+          </div>
+
+          <div class="p-2 w-1/2">
+            <div class="relative">
+              <label  class="leading-7 text-sm text-gray-600">Profession</label>
+              <input type="text" id="profession" name="profession"  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+          </div>
+
+          
+
+          <div class="p-2 w-full">
+            <div class="relative">
+              <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+              <textarea id="message" name="message" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+            </div>
+          </div>
+          <div class="p-2 w-full">
+            <button class="flex mx-auto text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg">Submit</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+</form>
+
+
+
+
+{% endblock body %}
+
